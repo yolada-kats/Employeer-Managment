@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f4f8;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(30, 30, 30, 0.9);
+    position: fixed;
+    top: 0;
+    padding: 10px 40px;
+    z-index: 999;
+}
+
+.logo {
+    width: 180px;
+}
+
+.logo > img {
+    width: 100%;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #8ecae6;
+}
+
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex !important;
+}
+
+.dropdown-content li {
+    padding: 8px 20px;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    color: #8ecae6;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/TeachersWebApp/static/img/lan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    backdrop-filter: brightness(0.8);
+}
+
+.title > p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.subtitle > p {
+    font-size: 24px;
+    max-width: 800px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Main */
+.main {
+    width: 100%;
+    padding: 60px 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main-title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    color: #023047;
+    margin-bottom: 30px;
+}
+
+.main-text p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #ffffff;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.follow-us {
+    margin-right: 10px;
+}
+
+.fab {
+    font-size: 22px;
+    color: #8ecae6;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.fab:hover {
+    color: #219ebc;
+}
+
+
+
